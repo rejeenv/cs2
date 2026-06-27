@@ -1,0 +1,31 @@
+﻿  math.cpp
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\wmemory.h(48,72): warning C4244: "argument": konwersja z "uptr64" do "DWORD", możliwa utrata danych
+  (kompilowanie pliku źródłowego „math.cpp”)
+  
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\wmemory.h(56,99): warning C4244: "argument": konwersja z "uptr64" do "DWORD", możliwa utrata danych
+  (kompilowanie pliku źródłowego „math.cpp”)
+  
+  main.cpp
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\wmemory.h(48,72): warning C4244: "argument": konwersja z "uptr64" do "DWORD", możliwa utrata danych
+  (kompilowanie pliku źródłowego „src/main.cpp”)
+  
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\wmemory.h(56,99): warning C4244: "argument": konwersja z "uptr64" do "DWORD", możliwa utrata danych
+  (kompilowanie pliku źródłowego „src/main.cpp”)
+  
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\src\main.cpp(37,26): warning C4244: "argument": konwersja z "float" do "DWORD", możliwa utrata danych
+  window.cpp
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\wmemory.h(48,72): warning C4244: "argument": konwersja z "uptr64" do "DWORD", możliwa utrata danych
+  (kompilowanie pliku źródłowego „src/window/window.cpp”)
+  
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\wmemory.h(56,99): warning C4244: "argument": konwersja z "uptr64" do "DWORD", możliwa utrata danych
+  (kompilowanie pliku źródłowego „src/window/window.cpp”)
+  
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\src\window\window.cpp(85,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\src\window\window.cpp(44,17): warning C4101: "modeDesc": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\src\window\window.cpp(123,54): warning C4244: "=": konwersja z "float" do "UINT", możliwa utrata danych
+  Trwa generowanie kodu
+  5 of 1672 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    24 functions had inline decision re-evaluated but remain unchanged
+  Zakończono generowanie kodu
+  ImGui Ovelay & Menu.vcxproj -> C:\Users\ssssu\source\repos\Overlay\x64\Release\ImGui Overlay & Menu.exe
