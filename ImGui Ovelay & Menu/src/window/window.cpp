@@ -1,6 +1,5 @@
 #include "window.hpp"
 #include "../../globals.h"
-
 #include <dwmapi.h>
 #include <stdio.h>
 #include "../../math.hpp"
@@ -407,37 +406,29 @@ void Overlay::EndRender()
 	//swap_chain->Present(0U, 0U);
 }
 
-void Overlay::Render()
-{
-	if (RenderMenu) {
-		ImGui::SetNextWindowSize({ 500, 300 });
-		ImGui::Begin("Pizdak (.)(.)", &RenderMenu, ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoScrollbar);
-		ImGui::Checkbox("Anti-Flash", &cfg.bAntiFlash);
-		ImGui::Checkbox("Triggerbot", &cfg.bTriggerbot);
-		ImGui::Checkbox("Bunnyhop", &cfg.bBunnyhop);
-		ImGui::SliderFloat("Triggerbot delay 1", &cfg.bTriggerbotShootDelay1, 0.0f, 100.0f);
-		ImGui::Checkbox("ESP Box", &cfg.bEsp);
-		ImGui::End();
+void Overlay::Render() {
+	if (!cfg.bEsp) return;
+
+	std::vector<PlayerESP> localEspList;
+	{
+		std::lock_guard<std::mutex> lock(g_espMutex);
+		localEspList = g_espList;
 	}
 
-	if (cfg.bEsp) {
-		auto draw = ImGui::GetBackgroundDrawList();
-		std::lock_guard<std::mutex> lock(g_espMutex);
+	auto draw = ImGui::GetBackgroundDrawList();
 
-		char buf[64];
-		sprintf_s(buf, "Graczy w liscie: %zu", g_espList.size());
-		draw->AddText({ 100, 100 }, IM_COL32(255, 255, 0, 255), buf);
+	for (const auto& p : localEspList) {
+		if (!p.isValid) continue;
 
-		for (const auto& p : g_espList) {
-			if (!p.isValid) continue;
-			float height = p.feet2D.y - p.head2D.y;
-			float width = height / 2.0f;
-			draw->AddRect(
-				{ p.feet2D.x - width / 2.0f, p.head2D.y },
-				{ p.feet2D.x + width / 2.0f, p.feet2D.y },
-				IM_COL32(255, 255, 255, 255), 0.0f, 0, 2.0f
-			);
-		}
+		float height = p.feet2D.y - p.head2D.y;
+		float width = height / 2.0f;
+
+		draw->AddRect(
+			{ p.feet2D.x - width / 2.0f, p.head2D.y },
+			{ p.feet2D.x + width / 2.0f, p.feet2D.y },
+			IM_COL32(255, 255, 255, 255),
+			0.0f, 0, 2.0f
+		);
 	}
 }
 

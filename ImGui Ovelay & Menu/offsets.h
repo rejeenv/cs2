@@ -1,7 +1,8 @@
+#pragma once
 #ifndef OFFSETS_H
 #define OFFSETS_H
-
-#include "include.h"
+#include "wmemory.h"
+#include <cstdint>
 
 inline Wmemory cs2(L"cs2.exe");
 //github.com/a2x/cs2-dumper/ - thx

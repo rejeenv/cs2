@@ -1,31 +1,42 @@
-﻿  math.cpp
+﻿  CheatThread.cpp
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\include.h(15,8): error C2011: "Vector3'': "struct" wpisz ponownie definicję
+  (kompilowanie pliku źródłowego „CheatThread.cpp”)
+      C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\math.hpp(3,8):
+      zobacz deklarację „Vector3”
+  
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\include.h(26,8): error C2011: "Vector2'': "struct" wpisz ponownie definicję
+  (kompilowanie pliku źródłowego „CheatThread.cpp”)
+      C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\math.hpp(2,8):
+      zobacz deklarację „Vector2”
+  
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\include.h(28,8): error C2011: "PlayerESP'': "struct" wpisz ponownie definicję
+  (kompilowanie pliku źródłowego „CheatThread.cpp”)
+      C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\globals.h(6,8):
+      zobacz deklarację „PlayerESP”
+  
 C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\wmemory.h(48,72): warning C4244: "argument": konwersja z "uptr64" do "DWORD", możliwa utrata danych
-  (kompilowanie pliku źródłowego „math.cpp”)
+  (kompilowanie pliku źródłowego „CheatThread.cpp”)
   
 C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\wmemory.h(56,99): warning C4244: "argument": konwersja z "uptr64" do "DWORD", możliwa utrata danych
-  (kompilowanie pliku źródłowego „math.cpp”)
+  (kompilowanie pliku źródłowego „CheatThread.cpp”)
   
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\CheatThread.cpp(32,21): error C2079: "feetPos" używa niezdefiniowanego struct "Vector3"
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\CheatThread.cpp(32,35): error C2672: „Wmemory::ReadMemory”: nie znaleziono zgodnej przeciążonej funkcji
+      C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\wmemory.h(83,7):
+      może to być „T Wmemory::ReadMemory(uptr64)”
+          C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\CheatThread.cpp(32,35):
+          Specjalizacja szablonu funkcji „T Wmemory::ReadMemory(uptr64)” nie powiodła się
+              C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\CheatThread.cpp(32,35):
+              Z następującymi argumentami szablonu:
+                  C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\CheatThread.cpp(32,35):
+                  "T=Vector3"
+  
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\CheatThread.cpp(33,21): error C2079: "headPos" używa niezdefiniowanego struct "Vector3"
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\CheatThread.cpp(35,21): error C2079: "feet2D" używa niezdefiniowanego struct "Vector2"
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\CheatThread.cpp(35,29): error C2079: "head2D" używa niezdefiniowanego struct "Vector2"
+  globals.cpp
   main.cpp
-C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\wmemory.h(48,72): warning C4244: "argument": konwersja z "uptr64" do "DWORD", możliwa utrata danych
-  (kompilowanie pliku źródłowego „src/main.cpp”)
-  
-C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\wmemory.h(56,99): warning C4244: "argument": konwersja z "uptr64" do "DWORD", możliwa utrata danych
-  (kompilowanie pliku źródłowego „src/main.cpp”)
-  
-C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\src\main.cpp(37,26): warning C4244: "argument": konwersja z "float" do "DWORD", możliwa utrata danych
   window.cpp
-C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\wmemory.h(48,72): warning C4244: "argument": konwersja z "uptr64" do "DWORD", możliwa utrata danych
-  (kompilowanie pliku źródłowego „src/window/window.cpp”)
-  
-C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\wmemory.h(56,99): warning C4244: "argument": konwersja z "uptr64" do "DWORD", możliwa utrata danych
-  (kompilowanie pliku źródłowego „src/window/window.cpp”)
-  
-C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\src\window\window.cpp(85,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\src\window\window.cpp(44,17): warning C4101: "modeDesc": lokalna zmienna, do której nie istnieje odwołanie
-C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\src\window\window.cpp(123,54): warning C4244: "=": konwersja z "float" do "UINT", możliwa utrata danych
-  Trwa generowanie kodu
-  5 of 1672 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    24 functions had inline decision re-evaluated but remain unchanged
-  Zakończono generowanie kodu
-  ImGui Ovelay & Menu.vcxproj -> C:\Users\ssssu\source\repos\Overlay\x64\Release\ImGui Overlay & Menu.exe
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\src\window\window.cpp(84,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\src\window\window.cpp(43,17): warning C4101: "modeDesc": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\ssssu\source\repos\Overlay\ImGui Ovelay & Menu\src\window\window.cpp(122,54): warning C4244: "=": konwersja z "float" do "UINT", możliwa utrata danych

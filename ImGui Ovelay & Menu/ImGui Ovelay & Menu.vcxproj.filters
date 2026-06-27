@@ -51,9 +51,6 @@
     <ClInclude Include="wmemory.h">
       <Filter>Cheat</Filter>
     </ClInclude>
-    <ClInclude Include="include.h">
-      <Filter>Cheat</Filter>
-    </ClInclude>
     <ClInclude Include="globals.h">
       <Filter>Cheat</Filter>
     </ClInclude>
@@ -92,8 +89,8 @@
     <ClCompile Include="globals.cpp">
       <Filter>Cheat</Filter>
     </ClCompile>
-    <ClCompile Include="math.cpp">
-      <Filter>Cheat</Filter>
+    <ClCompile Include="CheatThread.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

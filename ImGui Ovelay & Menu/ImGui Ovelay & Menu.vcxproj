@@ -142,13 +142,13 @@
     <ClInclude Include="ext\ImGui 1.90\imstb_textedit.h" />
     <ClInclude Include="ext\ImGui 1.90\imstb_truetype.h" />
     <ClInclude Include="globals.h" />
-    <ClInclude Include="include.h" />
     <ClInclude Include="math.hpp" />
     <ClInclude Include="offsets.h" />
     <ClInclude Include="src\window\window.hpp" />
     <ClInclude Include="wmemory.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CheatThread.cpp" />
     <ClCompile Include="ext\ImGui 1.90\imgui.cpp" />
     <ClCompile Include="ext\ImGui 1.90\imgui_demo.cpp" />
     <ClCompile Include="ext\ImGui 1.90\imgui_draw.cpp" />
@@ -157,7 +157,6 @@
     <ClCompile Include="ext\ImGui 1.90\imgui_tables.cpp" />
     <ClCompile Include="ext\ImGui 1.90\imgui_widgets.cpp" />
     <ClCompile Include="globals.cpp" />
-    <ClCompile Include="math.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\window\window.cpp" />
   </ItemGroup>
